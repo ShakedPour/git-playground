@@ -2,7 +2,7 @@ import requests
 import time
 
 def test_visits_counter():
-    url = "http://localhost:5000"
+    url = "http://web:5000"
 
     # שליחה של 3 בקשות ל-Flask
     for _ in range(3):
