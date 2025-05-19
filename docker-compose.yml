@@ -9,3 +9,10 @@ services:
 
   redis:
     image: "redis:alpine"
+
+  tester:
+    build: .
+    depends_on:
+      - web
+      - redis
+    command: ["pytest", "tests/test_app.py"]
