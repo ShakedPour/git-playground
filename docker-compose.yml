@@ -15,4 +15,5 @@ services:
     depends_on:
       - web
       - redis
-    command: ["pytest", "tests/test_app.py"]
+
+    command: ["pytest", "test_app.py"]
